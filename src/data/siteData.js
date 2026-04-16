@@ -8,7 +8,7 @@ export const personalData = {
   github: 'https://github.com/Whiskyy-Limon',
   linkedin: 'https://www.linkedin.com/in/sergio-reyes-guerra-278874348/',
   resumeUrl: '/CV_Reyes.pdf',
-  profileImage: '/src/assets/profile.jpg',
+  profileImage: '/profile.jpg',
   summary:
     'Desarrollador Full Stack Junior con experiencia en React, Node.js, PHP y Laravel, especializado en aplicaciones web modernas y sistemas basados en datos. He desarrollado soluciones completas con autenticación, APIs y despliegue en la nube. Interesado en construir productos escalables, eficientes y orientados a la experiencia del usuario.',
   hero: {
