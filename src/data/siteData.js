@@ -7,10 +7,9 @@ export const personalData = {
   location: 'Lima, Perú',
   github: 'https://github.com/Whiskyy-Limon',
   linkedin: 'https://www.linkedin.com/in/sergio-reyes-guerra-278874348/',
-  resumeUrl: '/CV_Reyes.pdf',
-  profileImage: '/profile.jpg',
+  profileImage: '/profile.png',
   summary:
-    'Desarrollador Full Stack Junior con experiencia en React, Node.js, PHP y Laravel, especializado en aplicaciones web modernas y sistemas basados en datos. He desarrollado soluciones completas con autenticación, APIs y despliegue en la nube. Interesado en construir productos escalables, eficientes y orientados a la experiencia del usuario.',
+    'Desarrollador Full Stack Junior con experiencia en React, Node.js y bases de datos SQL/NoSQL. Formación en desarrollo de software y ciencia de datos, con conocimientos en machine learning aplicado a la toma de decisiones.',
   hero: {
     headline:
       'Desarrollador Full Stack especializado en aplicaciones web, datos e inteligencia artificial',
@@ -19,9 +18,7 @@ export const personalData = {
     availabilityText: 'Disponible para nuevas oportunidades',
     primaryActionLabel: 'Ver proyectos',
     primaryActionTargetId: 'projects',
-    secondaryActionLabel: 'Descargar CV',
-    secondaryActionUrl: '/CV_Reyes.pdf',
-    highlightPills: ['React', 'Node.js', 'MongoDB', 'SQL', 'Machine Learning', 'Cloud'],
+    highlightPills: ['React', 'Node.js', 'Python', 'SQL', 'Machine Learning', 'Cloud'],
   },
   about: {
     title: 'Desarrollador de software enfocado en soluciones basadas en datos',
@@ -30,45 +27,51 @@ export const personalData = {
       'He trabajado en el desarrollo completo de aplicaciones, desde la interfaz de usuario hasta la implementación de APIs y despliegue en la nube.',
       'Me interesa especialmente el desarrollo de soluciones basadas en datos, inteligencia artificial y sistemas escalables que puedan generar valor real para empresas y usuarios.',
       'Actualmente estudio Diseño y Desarrollo de Software en TECSUP y continúo fortaleciendo mi perfil con formación en ciencia de datos, machine learning y administración de bases de datos.',
+      'He participado en proyectos de inteligencia artificial integrando APIs de IA.',
     ],
   },
   skills: [
+    {
+      category: 'Lenguajes',
+      skills: ['JavaScript', 'Python', 'C#', 'SQL', 'PHP'],
+    },
     {
       category: 'Frontend',
       skills: ['React', 'Next.js', 'HTML', 'CSS', 'Tailwind', 'Bootstrap'],
     },
     {
-      category: 'Mobile',
-      skills: ['Flutter'],
-    },
-    {
       category: 'Backend',
-      skills: ['Node.js', 'Express', 'MongoDB', 'Firebase', 'MySQL', 'PHP', 'Laravel'],
+      skills: ['Node.js', 'Express', 'ASP.NET Core', 'Django', 'Laravel'],
     },
     {
-      category: 'Lenguajes',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'SQL', 'Dart', 'Swift'],
+      category: 'Bases de Datos',
+      skills: ['SQL Server', 'MySQL', 'MongoDB', 'Oracle 19c', 'PL/SQL'],
     },
     {
       category: 'Data & Machine Learning',
       skills: [
         'Análisis de datos',
-        'SQL avanzado',
-        'Machine Learning aplicado a toma de decisiones',
-        'Modelado y gestión de bases de datos',
+        'EDA',
+        'Modelado de datos',
+        'Machine Learning (clasificación, clustering)',
+        'Procesos ETL',
       ],
     },
     {
+      category: 'Integración & IA',
+      skills: ['APIs REST', 'Integración de APIs de IA (OpenAI, ElevenLabs)', 'JWT'],
+    },
+    {
       category: 'Cloud & DevOps',
-      skills: ['AWS (EC2, S3, RDS)', 'Docker', 'Vercel', 'Railway'],
+      skills: ['AWS (EC2, RDS)', 'Vercel', 'Render'],
     },
     {
       category: 'Herramientas',
-      skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Android Studio', 'Figma'],
+      skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Figma', 'Excel (Nivel Intermedio)'],
     },
     {
       category: 'Idiomas',
-      skills: ['Español (Nativo)', 'Inglés (Intermedio)'],
+      skills: ['Español (Nativo)', 'Inglés (Básico)'],
     },
     {
       category: 'Soft skills',
@@ -85,11 +88,12 @@ export const personalData = {
     {
       id: 'task-manager-pro',
       title: 'Task Manager Pro',
+      startDate: '2026',
+      endDate: 'Actualidad',
       description:
         'Aplicación full stack para gestión de tareas con autenticación, dashboard de estadísticas y UI moderna tipo SaaS. Permite organizar tareas por estado y prioridad, con una arquitectura escalable y experiencia de usuario optimizada.',
       techStack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MySQL (Prisma)', 'JWT'],
       githubUrl: 'https://github.com/Whiskyy-Limon/Task_Manager_Pro',
-      featured: true,
       highlights: [
         'Autenticación segura con JWT',
         'CRUD completo de tareas',
@@ -101,15 +105,34 @@ export const personalData = {
     },
     {
       id: 'vocai',
-      title: 'VocAI – Asistente de orientación vocacional',
+      title: 'VocAI – Asistente de orientación vocacional con IA',
+      startDate: '2025',
+      endDate: '2026',
       description:
-        'Proyecto full stack enfocado en orientación vocacional para estudiantes, con frontend en React, backend en Node.js/Express, base de datos MongoDB, autenticación, cuestionario y panel administrativo.',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Vercel / Cloud deployment'],
-      githubUrl: 'https://github.com/Whiskyy-Limon',
+        'Proyecto full stack de orientación vocacional para postulantes a TECSUP. Permite a los estudiantes explorar carreras tecnológicas, interactuar por voz con un asistente de IA y recibir recomendaciones personalizadas según sus intereses, reduciendo el cambio de carrera por falta de información.',
+      techStack: [
+        'React',
+        'Vite',
+        'Node.js',
+        'Express',
+        'MongoDB',
+        'OpenAI API',
+        'ElevenLabs',
+        'Web Speech API',
+        'JWT',
+        'Vercel',
+        'Render',
+      ],
+      githubUrl: 'https://github.com/Whiskyy-Limon/VocAI.git',
+      featured: true,
       highlights: [
-        'Cuestionario vocacional interactivo',
-        'Autenticación y panel administrativo',
-        'Backend API con Express y MongoDB',
+        'Asistente vocal con IA: interacción por voz natural (voz - IA - voz)',
+        'Motor de recomendación vocacional con OpenAI',
+        'Catálogo interactivo de 6 carreras tecnológicas',
+        'Test vocacional y análisis de perfil del estudiante',
+        'Autenticación segura con JWT y panel administrativo',
+        'Despliegue en la nube con arquitectura escalable',
+        'Validado con usuarios piloto (4.38/5 de satisfacción)',
       ],
     },
   ],
@@ -136,10 +159,10 @@ export const personalData = {
       id: 'proj-vocai',
       type: 'project',
       title: 'VocAI – Asistente de orientación vocacional',
-      organization: 'Proyecto académico',
+      organization: 'Proyecto Final de Carrera (TFC) – TECSUP',
       location: 'Lima, Perú',
       startDate: '2025',
-      endDate: 'Actualidad',
+      endDate: '2026',
       description:
         'Desarrollo full stack de una solución de orientación vocacional con inteligencia artificial.',
       highlights: [
@@ -158,7 +181,8 @@ export const personalData = {
       organization: 'TECSUP',
       location: 'Lima, Perú',
       startDate: '2023',
-      endDate: '2025',
+      endDate: '2026',
+      status: 'Egresado',
       description:
         'Formación profesional en desarrollo de software, aplicaciones web, bases de datos y arquitectura de sistemas.',
       highlights: [],
@@ -174,6 +198,7 @@ export const personalData = {
       description:
         'Curso enfocado en análisis de datos y machine learning aplicado a la toma de decisiones. Desarrollado del 03 de febrero al 28 de febrero de 2026.',
       highlights: ['Duración: 24 horas'],
+      certificateUrl: '/certificados/ciencia-datos-ml-isil.pdf',
     },
     {
       id: 'cert-dba-oracle',
@@ -185,7 +210,8 @@ export const personalData = {
       endDate: '2026',
       description:
         'Administración de bases de datos Oracle, monitoreo, seguridad, auditoría, backup y recuperación.',
-      highlights: ['Duración: 16 horas'],
+      highlights: ['Duración: 16 horas', 'Nota final: 18/20'],
+      certificateUrl: '/certificados/dba-oracle-19c-uni.pdf',
     },
     {
       id: 'cert-sql-ia',
@@ -197,7 +223,21 @@ export const personalData = {
       endDate: '2026',
       description:
         'Consultas SQL avanzadas, diseño de bases de datos, JOINs, agregaciones, subconsultas, optimización e integración con IA.',
-      highlights: ['Duración: 18 horas'],
+      highlights: ['Duración: 18 horas', 'Nota final: 17/20'],
+      certificateUrl: '/certificados/sql-bd1-ia-uni.pdf',
+    },
+    {
+      id: 'cert-python-ia',
+      type: 'certification',
+      title: 'Programación en Python Intermedio + IA',
+      organization: 'Universidad Nacional de Ingeniería (UNI)',
+      location: 'Lima, Perú',
+      startDate: '2026',
+      endDate: '2026',
+      description:
+        'Programación orientada a objetos, manejo de excepciones y aplicaciones de inteligencia artificial en Python.',
+      highlights: ['Duración: 18 horas', 'Nota final: 20/20'],
+      certificateUrl: '/certificados/python-intermedio-ia-uni.pdf',
     },
   ],
 };

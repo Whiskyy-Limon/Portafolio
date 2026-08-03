@@ -247,6 +247,11 @@ button {
   width: 100%;
 }
 
+.btn-sm {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+}
+
 /* Hero */
 
 .hero {
@@ -537,6 +542,14 @@ button {
   font-size: 1.12rem;
 }
 
+.project-period {
+  margin: 0 0 0.5rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
 .project-description {
   margin: 0;
   font-size: 0.9rem;
@@ -661,6 +674,20 @@ button {
   margin: 0 0 0.2rem;
 }
 
+.timeline-status {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  vertical-align: middle;
+}
+
 .timeline-organization {
   font-size: 0.86rem;
   margin: 0 0 0.1rem;
@@ -683,6 +710,10 @@ button {
   padding-left: 1.1rem;
   font-size: 0.84rem;
   color: var(--color-text-soft);
+}
+
+.timeline-download {
+  margin-top: 0.75rem;
 }
 
 /* Contact */

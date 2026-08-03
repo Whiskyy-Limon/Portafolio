@@ -9,7 +9,10 @@ function TimelineItem({ item }) {
           {item.startDate}
           {item.endDate ? ` – ${item.endDate}` : ''}
         </p>
-        <h3 className="timeline-title">{item.title}</h3>
+        <h3 className="timeline-title">
+          {item.title}
+          {item.status && <span className="timeline-status">{item.status}</span>}
+        </h3>
         <p className="timeline-organization">{item.organization}</p>
         <p className="timeline-location">{item.location}</p>
         {item.description && <p className="timeline-description">{item.description}</p>}
@@ -19,6 +22,15 @@ function TimelineItem({ item }) {
               <li key={highlight}>{highlight}</li>
             ))}
           </ul>
+        )}
+        {item.certificateUrl && (
+          <a
+            href={item.certificateUrl}
+            className="btn btn-ghost btn-sm timeline-download"
+            download
+          >
+            Descargar certificado
+          </a>
         )}
       </div>
     </article>

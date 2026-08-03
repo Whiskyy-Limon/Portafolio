@@ -4,8 +4,14 @@ function ProjectCard({ project }) {
   return (
     <article className={`project-card ${project.featured ? 'project-card-featured' : ''}`}>
       <div className="project-card-header">
-        {project.featured && <span className="project-badge">Featured</span>}
+        {project.featured && <span className="project-badge">Destacado</span>}
         <h3 className="project-title">{project.title}</h3>
+        {project.startDate && (
+          <p className="project-period">
+            {project.startDate}
+            {project.endDate ? ` – ${project.endDate}` : ''}
+          </p>
+        )}
         <p className="project-description">{project.description}</p>
       </div>
       <div className="project-meta">

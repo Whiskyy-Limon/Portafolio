@@ -33,11 +33,6 @@ function Hero({
             <button type="button" className="btn btn-primary" onClick={handlePrimaryClick}>
               {data.primaryActionLabel}
             </button>
-            {data.secondaryActionUrl && (
-              <a href={data.secondaryActionUrl} className="btn btn-ghost" target="_blank" rel="noreferrer noopener">
-                {data.secondaryActionLabel}
-              </a>
-            )}
           </div>
           <div className="hero-links" aria-label="Enlaces principales">
             {github && (
